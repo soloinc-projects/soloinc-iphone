@@ -25,18 +25,18 @@
 <main id="main">
 <div class="doc">
 <h1>Privacy policy</h1>
-<p>SoloINC for iPhone, from 8086 LLC. Last updated 31 October 2026.</p>
+<p>SoloINC for iPhone, from 8086 LLC. Last updated 1 November 2026.</p>
 <p><b>In short:</b> there is no SoloINC account, and nothing the app holds is sent to us. We run no server the app talks to, and the app has no analytics, no ads and no tracking. The iPhone talks only to SoloINC on your own Mac.</p>
 <h2>What stays on your iPhone</h2>
 <ul>
 <li>A device key that signs each of your answers. It is made in the iPhone's Secure Enclave and never leaves it.</li>
-<li>The pairing token and your Mac's network addresses, kept in the iPhone's Keychain.</li>
-<li>A read-only copy of what your Mac last sent (asks, Today, Company, the record), so the app can show it when the Mac is out of reach. The Desk widget and the controls read the count and your Mac's name from it.</li>
-<li>Your settings, and the app's own event notes (for example "pairing completed", "answer sent from a notification"). The notes are added to your own Mac's record.</li>
+<li>The pairing token, your Mac's network addresses and its certificate's fingerprint, kept in the iPhone's Keychain.</li>
+<li>A read-only copy of what your Mac last sent (asks, Today and Company), so the app can show it when the Mac is out of reach. The Desk widget, the controls and Spotlight read the count and names from it, on the iPhone only. The Record is read from your Mac each time and not kept on the iPhone.</li>
+<li>Your settings, and the app's own event log (for example "pairing completed", "answer sent from a notification"), kept on the iPhone for 30 days and never sent anywhere. What you do through your Mac is written to your Mac's own record by the Mac.</li>
 </ul>
 <h2>Where data goes</h2>
 <ul>
-<li><b>Your Mac:</b> your answers, Send back notes, decline reasons, stops and the jobs you start go to SoloINC on your own Mac, over your own network, encrypted in transit. So does the iPhone's device public key, when you pair. The Mac does the work; nothing runs on the iPhone.</li>
+<li><b>Your Mac:</b> your answers, Send back notes, decline reasons, stops, the jobs you start and what you ask the Managing Agent go to SoloINC on your own Mac, over your own network, encrypted in transit on a connection pinned to your Mac's own certificate. Your Mac answers with its own model provider; no model provider hears from the iPhone. Before you pair, and in the sample, nothing leaves the iPhone. So does the iPhone's device public key, when you pair. The Mac does the work; nothing runs on the iPhone.</li>
 <li><b>Apple:</b> the app reads the App Store's age range (Declared Age Range) at first launch where a law requires it, and may ask iOS to show its rating prompt. Apple handles those under its own policy; the app does not store or send the age range.</li>
 <li>We, 8086 LLC, receive none of it. The app sells nothing.</li>
 </ul>
