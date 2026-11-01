@@ -36,7 +36,7 @@
 </ul>
 <h2>Where data goes</h2>
 <ul>
-<li><b>Your Mac:</b> your answers, Send back notes, decline reasons, stops, the jobs you start and what you ask the Managing Agent go to SoloINC on your own Mac, encrypted in transit: on your local network over a connection pinned to your Mac's own certificate, and over your tailnet (Tailscale) on a connection iOS checks itself. Your Mac answers with its own model provider; no model provider hears from the iPhone. Before you pair, and in the sample, nothing leaves the iPhone. So does the iPhone's device public key, when you pair. The Mac does the work; nothing runs on the iPhone.</li>
+<li><b>Your Mac:</b> your answers, Send back notes, decline reasons, stops, the jobs you start and what you ask the Managing Agent go to SoloINC on your own Mac, encrypted in transit: on your local network over a connection pinned to your Mac's own certificate, and over your tailnet (Tailscale) on a connection iOS checks itself. When you pair, the iPhone's device public key goes to your Mac too; the private key never leaves the Secure Enclave. Your Mac answers with its own model provider; no model provider hears from the iPhone. Before you pair, and in the sample, nothing leaves the iPhone. The Mac does the work; nothing runs on the iPhone.</li>
 <li><b>Apple:</b> the app reads the App Store's age range (Declared Age Range) at first launch where a law requires it, and may ask iOS to show its rating prompt. Apple handles those under its own policy; the app does not store or send the age range.</li>
 <li>We, 8086 LLC, receive none of it. The app sells nothing.</li>
 </ul>
